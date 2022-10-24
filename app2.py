@@ -36,4 +36,4 @@ df = recommend(option_1,option_2)
 # st.markdown(hide_table_row_index, unsafe_allow_html=True)
 
 # Display a static table
-st.table(df)
+st.dataframe(df)
