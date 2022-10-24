@@ -1,13 +1,12 @@
 import streamlit as st
 from recomender2 import *
-import pandas as pd
 
 
 st.set_page_config(
    page_title="Movie Buddy",
    page_icon="📽️",
    layout="centered",
-   initial_sidebar_state="auto",
+   initial_sidebar_state="expanded",
 )
 
 '''
@@ -33,15 +32,15 @@ with col2:
 df = recommend(option_1,option_2)
 
 # CSS to inject contained in a string
-hide_dataframe_row_index = """
+hide_table_row_index = """
             <style>
-            .row_heading.level0 {display:none}
-            .blank {display:none}
+            thead tr th:first-child {display:none}
+            tbody th {display:none}
             </style>
             """
 
 # Inject CSS with Markdown
-st.markdown(hide_dataframe_row_index, unsafe_allow_html=True)
+st.markdown(hide_table_row_index, unsafe_allow_html=True)
 
-# Display an interactive table
+# Display a static table
 st.dataframe(df, use_container_width=True)
