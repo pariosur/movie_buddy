@@ -72,4 +72,4 @@ def recommend(option_1,option_2):
     recommendation_df.rename(columns={'index': 'title'},inplace=True, errors='raise')
     showtime_df = recommendation_df.iloc[2:]
 
-    return showtime_df['title'].head(50)
+    return showtime_df['title'].head(30)
