@@ -43,4 +43,4 @@ hide_table_row_index = """
 st.markdown(hide_table_row_index, unsafe_allow_html=True)
 
 # Display a static table
-st.dataframe(df, use_container_width=True)
+st.dataframe(df)
