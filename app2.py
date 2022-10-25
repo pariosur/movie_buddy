@@ -1,5 +1,6 @@
 import streamlit as st
 from recomender2 import *
+from PIL import Image
 
 st.set_page_config(
    page_title="movie buddy",
@@ -8,14 +9,13 @@ st.set_page_config(
    initial_sidebar_state="expanded",
 )
 
+
 '''
 # Movie Buddy
 
-##### Find the perfect movies you should watch together!
-
+##### Find the perfect movies to watch together!
 
 '''
-
 
 col1, col2 = st.columns(2)
 
