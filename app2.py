@@ -11,7 +11,7 @@ st.set_page_config(
 '''
 # Movie Buddy
 
-##### Find the perfect movies you both should watch!
+##### Find the perfect movies you should watch together!
 
 '''
 
