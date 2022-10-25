@@ -2,7 +2,7 @@
 > It's movie night and the question comes up again: "which movie should we watch?". Worry no more, this app will make your life easier!
 > Just pick two movies and the app will return the best recommendations for both. 
 > 
-> Live demo [_here_](https://moviebuddy.streamlitapp.com/).
+> Live demo [_here_](https://movie-buddy.streamlitapp.com/).
 
 ## Table of Contents
 * [General Info](#general-information)
