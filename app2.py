@@ -1,7 +1,6 @@
 import streamlit as st
 from recomender2 import *
 
-
 st.set_page_config(
    page_title="Movie Buddy",
    page_icon="📽️",
@@ -43,4 +42,4 @@ hide_table_row_index = """
 st.markdown(hide_table_row_index, unsafe_allow_html=True)
 
 # Display a static table
-st.dataframe(df)
+st.table(df)
