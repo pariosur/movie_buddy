@@ -69,7 +69,7 @@ def recommend(option_1,option_2):
     dictDf = {'content': sim1 , 'collaborative': sim2, 'hybrid': hybrid_3}
     recommendation_df = pd.DataFrame(dictDf, index = latent_df.index).reset_index()
     recommendation_df.sort_values('hybrid', ascending=False, inplace=True)
-    recommendation_df.rename(columns={'index': 'title'},inplace=True, errors='raise')
+    recommendation_df.rename(columns={'index': 'Title'},inplace=True, errors='raise')
     showtime_df = recommendation_df.iloc[2:]
 
-    return showtime_df['title'].head(50)
+    return showtime_df['Title'].head(50)
