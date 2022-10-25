@@ -31,7 +31,7 @@ with col2:
     option_2 = st.selectbox('Choose another great movie', (movies['title']), key='second_choice', index=8358 )
     # st.write('You selected:', option_2)
 
-st.markdown("Recommendations you'll love:", unsafe_allow_html=False)
+st.markdown("Recommendations you will love:", unsafe_allow_html=False)
 
 df = recommend(option_1,option_2)
 
