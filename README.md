@@ -13,7 +13,7 @@
 - The recommendation system works as a hybrid model.
 - It uses **content-based** based on similarity of movie attributes: genre, actors, and other descriptive metadata associated with a movie. And **collaborative filtering** based on user ratings from the [_movieLens_](https://grouplens.org/datasets/movielens/) dataset .  
 - Both attributes and ratings were transformed into vectors in order to create a latent factor model with the best features. Those that explain at least 80% of the variance.
-- Then used cosine similarity as a similarity measure to find the most similar movies to every each choice by the user. 
+- Then used cosine similarity as a similarity measure to find the most similar movies for each of the user choices.
 - Lastly, a global measure average for both movies was calculated for both content and collaborative.  
 
 ## Technologies Used
