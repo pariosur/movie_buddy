@@ -21,14 +21,12 @@ col1, col2 = st.columns(2)
 
 
 with col1:
-    option_1 = st.selectbox('Choose a great movie', (movies['title']), key='first_choice', index=7400 )
+    option_1 = st.selectbox('Search for a great movie', (movies['title']), key='first_choice', index=7400 )
     # st.write('You selected:', option_1)
 
 with col2:
-    option_2 = st.selectbox('Choose another great movie', (movies['title']), key='second_choice', index=8358 )
+    option_2 = st.selectbox('Search for another great movie', (movies['title']), key='second_choice', index=8358 )
     # st.write('You selected:', option_2)
-
-st.markdown("Some recommendations you will love:", unsafe_allow_html=False)
 
 df = recommend(option_1,option_2)
 
@@ -44,4 +42,6 @@ hide_table_row_index = """
 st.markdown(hide_table_row_index, unsafe_allow_html=True)
 
 # Display a static table
-st.table(df)
+if st.button('Find Movies'):
+    st.markdown("Some recommendations you will love:", unsafe_allow_html=False)
+    st.table(df)
