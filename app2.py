@@ -12,10 +12,13 @@ st.set_page_config(
 
 '''
 # Movie Buddy
-
-##### Find the perfect movies to watch together!
+##### Find the perfect movies to watch together
 
 '''
+st.markdown("It's movie night and the question comes up again: 'Which movie should we watch?'. Worry no more, this app will make your life easier! Just search for two movies and the app will return the best recommendations you both will enjoy.")
+
+
+
 
 col1, col2 = st.columns(2)
 
