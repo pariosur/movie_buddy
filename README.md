@@ -18,7 +18,7 @@
 
 ## Technologies Used
 - Python
-- Streamlit
+- Streamlit 
 - Scikit-learn
 
 
